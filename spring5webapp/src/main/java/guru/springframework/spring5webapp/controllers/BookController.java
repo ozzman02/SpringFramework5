@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import guru.springfrawework.spring5webapp.repositories.BookRepository;
+import guru.springframework.spring5webapp.repositories.BookRepository;
 
 @Controller
 public class BookController {
