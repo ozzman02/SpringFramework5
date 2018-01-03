@@ -12,12 +12,13 @@ import org.springframework.context.annotation.Configuration;
 import guru.springframework.examplebeans.FakeDataSource;
 import guru.springframework.examplebeans.FakeJmsBroker;
 
-@Configuration
+
 //@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
 /*@PropertySources({
 	@PropertySource("classpath:datasource.properties"),
 	@PropertySource("classpath:jms.properties"),
 })*/
+@Configuration
 public class PropertyConfig {	
 
 	@Value("${guru.username}")
