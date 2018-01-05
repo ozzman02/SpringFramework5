@@ -14,8 +14,10 @@ public class Notes {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	/* No cascade operation.
-	 * If the Notes object is deleted the Recipe object will remain */
+	/* 
+	 * No cascade operation.
+	 * If the Notes object is deleted the Recipe object will remain 
+	 */
 	@OneToOne
 	private Recipe recipe;
 	
