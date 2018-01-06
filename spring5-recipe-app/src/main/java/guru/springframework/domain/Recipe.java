@@ -148,8 +148,12 @@ public class Recipe {
 		return notes;
 	}
 
+	/*
+	 * Need this method for the bidirectional association
+	 */
 	public void setNotes(Notes notes) {
 		this.notes = notes;
+		notes.setRecipe(this);
 	}
 
 	public Set<Ingredient> getIngredients() {
@@ -166,6 +170,15 @@ public class Recipe {
 
 	public void setCategories(Set<Category> categories) {
 		this.categories = categories;
+	}
+	
+	/*
+	 * Need this method for the bidirectional association
+	 */
+	public Recipe addIngredient(Ingredient ingredient) {
+		ingredient.setRecipe(this);
+		this.ingredients.add(ingredient);
+		return this;
 	}
 
 }
