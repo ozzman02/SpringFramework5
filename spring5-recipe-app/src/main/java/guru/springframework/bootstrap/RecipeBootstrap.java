@@ -18,7 +18,9 @@ import guru.springframework.domain.UnitOfMeasure;
 import guru.springframework.repositories.CategoryRepository;
 import guru.springframework.repositories.RecipeRepository;
 import guru.springframework.repositories.UnitOfMeasureRepository;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Component
 public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
@@ -101,6 +103,8 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 		Category mexicanCategory = mexicanCategoryOptional.get();
 
 		// Yummy Guac
+		log.debug("Creating Perfect Guacamole recipe");
+		
 		Recipe guacRecipe = new Recipe();
 		guacRecipe.setDescription("Perfect Guacamole");
 		guacRecipe.setPrepTime(10);
@@ -146,6 +150,8 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         recipes.add(guacRecipe);
 
         //Yummy Tacos
+        log.debug("Creating Spicy Grilled Chicken Taco recipe");
+        
         Recipe tacosRecipe = new Recipe();
         tacosRecipe.setDescription("Spicy Grilled Chicken Taco");
         tacosRecipe.setCookTime(9);
@@ -206,6 +212,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event) {
+		log.debug("Loading bootstrap data");
 		recipeRepository.saveAll(getRecipes());
 	}
 
