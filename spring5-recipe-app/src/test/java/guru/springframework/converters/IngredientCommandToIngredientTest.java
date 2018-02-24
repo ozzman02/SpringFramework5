@@ -59,8 +59,7 @@ public class IngredientCommandToIngredientTest {
         assertEquals(UOM_ID, ingredient.getUom().getId());
     }
 
-    @SuppressWarnings("unused")
-	@Test
+    @Test
     public void convertWithNullUOM() throws Exception {
         //given
         IngredientCommand command = new IngredientCommand();
@@ -79,7 +78,6 @@ public class IngredientCommandToIngredientTest {
         assertEquals(ID_VALUE, ingredient.getId());
         assertEquals(AMOUNT, ingredient.getAmount());
         assertEquals(DESCRIPTION, ingredient.getDescription());
-
     }
 
 }

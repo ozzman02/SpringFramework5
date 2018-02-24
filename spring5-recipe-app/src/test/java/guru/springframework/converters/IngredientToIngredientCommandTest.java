@@ -11,7 +11,9 @@ import java.math.BigDecimal;
 
 import static org.junit.Assert.*;
 
-
+/**
+ * Created by jt on 6/21/17.
+ */
 public class IngredientToIngredientCommandTest {
 
     public static final Recipe RECIPE = new Recipe();
@@ -52,7 +54,6 @@ public class IngredientToIngredientCommandTest {
         //then
         assertNull(ingredientCommand.getUom());
         assertEquals(ID_VALUE, ingredientCommand.getId());
-       // assertEquals(RECIPE, ingredientCommand.get);
         assertEquals(AMOUNT, ingredientCommand.getAmount());
         assertEquals(DESCRIPTION, ingredientCommand.getDescription());
     }
