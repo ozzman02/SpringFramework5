@@ -61,4 +61,5 @@ public class ImageControllerTest {
 
 		verify(imageService, times(1)).saveImageFile(anyLong(), any());
 	}
+	
 }
