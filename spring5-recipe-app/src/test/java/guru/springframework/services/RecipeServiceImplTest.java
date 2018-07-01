@@ -76,7 +76,8 @@ public class RecipeServiceImplTest {
         verify(recipeRepository, never()).findAll();
     }
 
-    @Test
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	@Test
     public void getRecipesTest() throws Exception {
 
         Recipe recipe = new Recipe();
@@ -107,7 +108,8 @@ public class RecipeServiceImplTest {
         verify(recipeRepository, times(1)).deleteById(anyLong());
     }
     
-    @Test(expected = NotFoundException.class)
+    @SuppressWarnings("unused")
+	@Test(expected = NotFoundException.class)
     public void getRecipeByIdTestNotFound() throws Exception {
 
         Optional<Recipe> recipeOptional = Optional.empty();

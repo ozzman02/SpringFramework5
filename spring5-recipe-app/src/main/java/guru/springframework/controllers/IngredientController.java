@@ -43,6 +43,7 @@ public class IngredientController {
 		return "recipe/ingredient/show";
 	}
 
+	@SuppressWarnings("unused")
 	@GetMapping("recipe/{recipeId}/ingredient/new")
 	public String newRecipe(@PathVariable String recipeId, Model model) {
 
