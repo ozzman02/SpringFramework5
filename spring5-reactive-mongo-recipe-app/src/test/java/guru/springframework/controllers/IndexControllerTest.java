@@ -49,8 +49,7 @@ public class IndexControllerTest {
                 .andExpect(view().name("index"));
     }
 
-    @SuppressWarnings("unchecked")
-	@Test
+    @Test
     public void getIndexPage() throws Exception {
 
         //given

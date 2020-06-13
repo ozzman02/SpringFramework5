@@ -65,8 +65,7 @@ public class RecipeControllerTest {
                 .andExpect(view().name("404error"));
     }
 
-    @SuppressWarnings("unused")
-	@Test
+    @Test
     public void testGetNewRecipeForm() throws Exception {
         RecipeCommand command = new RecipeCommand();
 
