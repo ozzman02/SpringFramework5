@@ -18,7 +18,7 @@ public class WebConfig {
 	private static final String GET_RECIPES_ROUTE = "/api/recipes";
 	
 	@Bean
-	RouterFunction<?> routes(RecipeService recipeService) {
+	public RouterFunction<?> routes(RecipeService recipeService) {
 		return RouterFunctions.route(GET(GET_RECIPES_ROUTE), 
 				serverRequest -> ServerResponse
 					.ok()
