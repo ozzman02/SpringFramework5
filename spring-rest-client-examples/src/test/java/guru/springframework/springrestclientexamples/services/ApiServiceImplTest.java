@@ -23,11 +23,12 @@ public class ApiServiceImplTest {
     public void setUp() throws Exception {
     }
 
+
     @Test
     public void testGetUsers() throws Exception {
 
-        List<User> users = apiService.getUsers(1);
+        List<User> users = apiService.getUsers(3);
 
-        assertEquals(1, users.size());
+        assertEquals(4, users.size());
     }
 }
