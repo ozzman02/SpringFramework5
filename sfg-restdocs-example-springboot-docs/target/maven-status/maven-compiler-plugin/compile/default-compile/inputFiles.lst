@@ -1,0 +1,11 @@
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/model/BeerPagedList.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/controller/BeerController.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/model/BeerDto.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/mappers/DateMapper.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/SfgRestdocsExampleApplication.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/model/BeerStyleEnum.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/controller/MvcExceptionHandler.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/web/mappers/BeerMapper.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/domain/Beer.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/repositories/BeerRepository.java
+/Users/oscarsantamaria/git/personal/SpringFramework5/sfg-restdocs-example-springboot-docs/src/main/java/guru/springframework/sfgrestdocsexample/bootstrap/BeerLoader.java

@@ -1,0 +1,4 @@
+[source,options="nowrap"]
+----
+{"id":"7202c0ed-1762-4e97-ac41-568fe603ba56","beerName":"Beer1","beerStyle":"PALE_ALE","upc":123456789012,"createdDate":null,"lastUpdatedDate":null}
+----
